@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="assignForms.css">
+</head>
+<body>
+    <h2>Reservation Form</h2>
+    <form id="form1" action="submit_reservation" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+    
+        <label for="contact">Contact Information:</label>
+        <input type="text" id="contact" name="contact" required><br><br>
+    
+        <label for="datetime">Reservation Date and Time:</label>
+        <input type="datetime-local" id="datetime" name="datetime" required><br><br>
+    
+        <label for="people">Number of People:</label>
+        <input type="number" id="people" name="people" min="1" required><br><br>
+    
+        <label for="requests">Special Requests:</label>
+        <textarea id="requests" name="requests"></textarea><br><br>
+    
+        <button type="submit">Make Reservation</button>
+    </form>
+
+    <h2>Subscription Form</h2>
+    <form action="subscribe" method="post">
+        <label for="sub_name">Name:</label>
+        <input type="text" id="sub_name" name="name" required><br><br>
+    
+        <label for="sub_email">Email:</label>
+        <input type="email" id="sub_email" name="email" required><br><br>
+    
+        <label>Preferred Topics:</label><br>
+        <input type="checkbox" id="topic1" name="topics" value="Technology">
+        <label for="topic1">Technology</label><br>
+    
+        <input type="checkbox" id="topic2" name="topics" value="Health">
+        <label for="topic2">Health</label><br>
+    
+        <input type="checkbox" id="topic3" name="topics" value="Business">
+        <label for="topic3">Business</label><br><br>
+    
+        <button type="submit">Subscribe</button>
+    </form>
+    
+    <h2>Application Form</h2>
+    <form action="submit_application" method="post" enctype="multipart/form-data">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required><br><br>
+    
+        <label for="job_email">Email:</label>
+        <input type="email" id="job_email" name="email" required><br><br>
+    
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+    
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+    
+        <label for="cover_letter">Cover Letter:</label>
+        <textarea id="cover_letter" name="cover_letter" required></textarea><br><br>
+    
+        <button type="submit">Submit Application</button>
+    </form>
+    <h2>Poll form</h2>
+    <form action="submit_poll" method="post">
+        <label>Which programming language do you prefer?</label><br>
+    
+        <input type="radio" id="lang1" name="language" value="Python">
+        <label for="lang1">Python</label><br>
+    
+        <input type="radio" id="lang2" name="language" value="JavaScript">
+        <label for="lang2">JavaScript</label><br>
+    
+        <input type="radio" id="lang3" name="language" value="Java">
+        <label for="lang3">Java</label><br><br>
+    
+        <label for="comment">Additional Comments:</label><br>
+        <textarea id="comment" name="comment"></textarea><br><br>
+    
+        <button type="submit">Vote</button>
+    </form>
+    
+    <h2>Application Form</h2>
+    <form >
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname">
+        
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label>Positions Available:</label>
+        <input type="radio" name="position" value="Junior Developer"> Junior Developer
+        <input type="radio" name="position" value="Mid-level Developer"> Mid-level Developer
+        <input type="radio" name="position" value="Senior Developer"> Senior Developer
+        <br><br>
+
+        <label>Programming Languages:</label>
+        <input type="checkbox" name="languages" value="Java"> Java
+        <input type="checkbox" name="languages" value="JavaScript"> JavaScript
+        <input type="checkbox" name="languages" value="Python"> Python
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password"><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
